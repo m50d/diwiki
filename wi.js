@@ -1,4 +1,6 @@
 //var net = require('net');
+var sys   = require('sys'),
+var    exec  = require('child_process').exec;
 
 var http = require('http');
 var server = http.createServer(function(req, res){
