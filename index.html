@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title class="title">Diwiki - Distributed Wiki</title>
+<script>
+var uri = 'https://github.com/m50d/diwiki.git'
+var repo = new Git.MemoryRepo()
+console.log("creating repo with origin: " + uri)
+repo.addRemote("origin", uri)
+var origin = repo.getRemote("origin")
+origin.fetchRefs(function() {
+console.log(repo.getAllRefs())
+})
+</script>
+</head>
+
+<body>
+</body>
+
+</html>
