@@ -1,4 +1,10 @@
 {
     "name" : "diwiki",
-    "version" : "0.0.1"
+    "version" : "0.0.1",
+    "dependencies" : {
+            "node-markdown" : "0.1.x",
+            "cheerio" : "0.10.x",
+            "jinjs" : "0.3.x",
+            "jsDAV" : "0.3.x"
+        }
 }
