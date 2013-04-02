@@ -35,14 +35,13 @@ var server = http.createServer(function(request, response){
       }
     })
 })
-
-server.listen(80, '127.0.0.1'); */
+server.listen(port, '127.0.0.1'); */
 var jsDAV = require("jsDAV");
 jsDAV.debugMode = true;
 //var jsDAV_Locks_Backend_FS = require("./../lib/DAV/plugins/locks/fs");
-
+var port = process.env.PORT
 jsDAV.createServer({
     node: __dirname
 // + "/../test/assets",
 //    locksBackend: jsDAV_Locks_Backend_FS.new(__dirname + "/../test/assets")
-}, 8000);
+}, port);
