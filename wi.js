@@ -44,4 +44,4 @@ jsDAV.createServer({
     node: __dirname
 // + "/../test/assets",
 //    locksBackend: jsDAV_Locks_Backend_FS.new(__dirname + "/../test/assets")
-}, port);
+}, port, '0.0.0.0');
