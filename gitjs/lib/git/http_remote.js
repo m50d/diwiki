@@ -5,7 +5,7 @@ Git.HttpRemote = function(repo, name, repoUrl) {
   this.fetchRefs = function(callback) {
     var remote = this
     $.get(
-      this.makeUri('/info/refs'),
+      this.makeUri('/refs'),
       "",
       function(data) {
         var refs = Git.HttpRemote.parseInfoRefs(data)

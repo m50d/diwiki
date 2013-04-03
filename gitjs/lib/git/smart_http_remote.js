@@ -5,7 +5,7 @@ Git.SmartHttpRemote = function(repo, name, repoUrl) {
   this.fetchRefs = function(callback) {
     var remote = this
     $.get(
-      this.makeUri('/info/refs', {service: "git-upload-pack"}),
+      this.makeUri('/refs', {service: "git-upload-pack"}),
       "",
       function(data) {
         var discInfo = Git.SmartHttpRemote.parseDiscovery(data)
